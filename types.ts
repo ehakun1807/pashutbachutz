@@ -1,16 +1,16 @@
 
-// Add React import to provide access to React namespace/types
-import React from 'react';
-
-export interface ServiceCardProps {
+export interface ServiceItem {
+  id: string;
   title: string;
   description: string;
-  icon: React.ReactNode;
+  addedValue: string;
   image: string;
+  icon: string;
 }
 
-export interface ConsultationResponse {
-  tips: string[];
-  summary: string;
-  recommendedPlants: string[];
+export interface Achievement {
+  id: string;
+  title: string;
+  company: string;
+  year: string;
 }
